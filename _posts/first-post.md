@@ -1,6 +1,6 @@
 ---
-title: "조금 부끄러운 첫 게시글"
-excerpt: "테크블로그를 시작합니다. 다들 모여보세요."
+title: "남 보여주기 부끄러운 첫 게시글"
+excerpt: "테크블로그를 시작합니다."
 coverImage: "/assets/blog/first-post/cover.png"
 date: "2024-12-01T20:24:07.322Z"
 author:

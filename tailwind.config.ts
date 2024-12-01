@@ -20,6 +20,7 @@ const config: Config = {
         "accent-7": "#333",
         success: "#0070f3",
         cyan: "#79FFE1",
+        title: "#292929",
         content: "#333d4b",
       },
       spacing: {
