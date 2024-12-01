@@ -26,7 +26,7 @@ export default async function Post(props: Params) {
 
   return (
     <main>
-      <PostAlert title={post.title} />
+      <PostAlert slug={params.slug} />
       <Container>
         <Header />
         <article className="mb-32">

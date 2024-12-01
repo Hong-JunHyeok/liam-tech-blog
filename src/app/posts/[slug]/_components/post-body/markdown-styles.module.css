@@ -1,16 +1,15 @@
 .markdown {
-  @apply text-lg leading-relaxed w-full;
+  @apply text-lg leading-relaxed w-full text-content;
 }
 
-.markdown p,
 .markdown ul,
 .markdown ol,
-.markdown blockquote {
+.markdown p {
   @apply my-6;
 }
 
 .markdown pre {
-  @apply my-1 bg-gray-100 text-gray-800 p-4 rounded-lg;
+  @apply bg-gray-100 text-gray-800 p-4 rounded-lg my-4;
 }
 .markdown pre > code {
   @apply text-gray-800;
@@ -21,13 +20,49 @@
 }
 
 .markdown h2 {
-  @apply text-3xl mt-12 mb-4 leading-snug;
+  @apply text-3xl mt-12 mb-4 leading-snug font-bold;
 }
 
 .markdown h3 {
-  @apply text-2xl mt-8 mb-4 leading-snug;
+  @apply text-2xl mt-8 mb-4 leading-snug font-bold;
 }
 
 .markdown img {
-  @apply rounded-md shadow-sm mx-auto;
+  @apply rounded-md shadow-sm mx-auto my-7;
+}
+
+.markdown figure {
+  @apply text-center my-8;
+}
+
+.markdown figcaption {
+  @apply text-sm text-gray-600 mt-2;
+}
+
+.markdown a {
+  @apply text-blue-600 underline;
+}
+
+.markdown a:hover {
+  @apply text-blue-800 underline;
+}
+
+.markdown ul {
+  @apply pl-6 list-disc;
+}
+
+.markdown ol {
+  @apply pl-6 list-decimal;
+}
+
+.markdown li {
+  @apply mb-2;
+}
+
+.markdown blockquote {
+  @apply bg-gray-50 border-l-4 border-success text-gray-700 pl-6 py-4 my-4 text-base;
+}
+
+.markdown blockquote > p {
+  @apply p-0 m-0;
 }

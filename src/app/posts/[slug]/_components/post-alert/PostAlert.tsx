@@ -1,11 +1,11 @@
 import Link from "next/link";
 
 type Props = {
-  title: string;
+  slug: string;
 };
 
-export default function PostAlert({ title }: Props) {
-  const GITHUB_FILE_LINK = `https://github.com/Hong-JunHyeok/liam-tech-blog/blob/main/_posts/${title}.md`;
+export default function PostAlert({ slug }: Props) {
+  const GITHUB_FILE_LINK = `https://github.com/Hong-JunHyeok/liam-tech-blog/blob/main/_posts/${slug}.md`;
 
   return (
     <div className="border-b bg-accent-1 border-accent-2 fixed top-0 w-full">
