@@ -1,19 +1,19 @@
-import Footer from "@/app/_components/footer";
-import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import cn from "classnames";
-import { ThemeSwitcher } from "./_components/theme-switcher";
+
+import Footer from "../components/footer";
 
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: `Next.js Blog Example with ${CMS_NAME}`,
-  description: `A statically generated blog example using Next.js and ${CMS_NAME}.`,
+  title: `리암 테크블로그`,
+  description: `디웨일 클라이언트 개발자 홍준혁입니다.`,
   openGraph: {
-    images: [HOME_OG_IMAGE_URL],
+    // TODO OG Image 등록하기
+    images: [],
   },
 };
 
@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ko">
       <head>
         <link
           rel="apple-touch-icon"
@@ -60,7 +60,6 @@ export default function RootLayout({
       <body
         className={cn(inter.className, "dark:bg-slate-900 dark:text-slate-400")}
       >
-        <ThemeSwitcher />
         <div className="min-h-screen">{children}</div>
         <Footer />
       </body>

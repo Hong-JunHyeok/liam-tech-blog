@@ -1,0 +1,33 @@
+.markdown {
+  @apply text-lg leading-relaxed w-full;
+}
+
+.markdown p,
+.markdown ul,
+.markdown ol,
+.markdown blockquote {
+  @apply my-6;
+}
+
+.markdown pre {
+  @apply my-1 bg-gray-100 text-gray-800 p-4 rounded-lg;
+}
+.markdown pre > code {
+  @apply text-gray-800;
+}
+
+.markdown code {
+  @apply bg-gray-100 text-success rounded-md text-sm leading-6 p-1;
+}
+
+.markdown h2 {
+  @apply text-3xl mt-12 mb-4 leading-snug;
+}
+
+.markdown h3 {
+  @apply text-2xl mt-8 mb-4 leading-snug;
+}
+
+.markdown img {
+  @apply rounded-md shadow-sm mx-auto;
+}
