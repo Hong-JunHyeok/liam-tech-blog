@@ -7,7 +7,7 @@ export default function NotFound() {
     <Container>
       <div className="flex-col flex items-center md:justify-between mt-16 mb-16 md:mb-12">
         <h1 className="text-2xl font-bold tracking-tighter leading-tight md:pr-8 text-title mb-4">
-          Liam의 기술블로그
+          Lia m의 기술블로그
         </h1>
 
         <Image
