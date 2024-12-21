@@ -1,4 +1,5 @@
 import { Author } from "@/types/author";
+import Septerator from "../septerator";
 
 const Avatar = ({ name, picture, description }: Author) => {
   return (
@@ -8,7 +9,7 @@ const Avatar = ({ name, picture, description }: Author) => {
 
       {description && (
         <div className="hidden sm:flex items-center mt-1 text-sm text-gray-600">
-          <span className="w-1 h-1 bg-gray-400 rounded-full mx-2"></span>
+          <Septerator />
           {description}
         </div>
       )}

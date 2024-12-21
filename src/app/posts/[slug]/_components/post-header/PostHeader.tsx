@@ -1,17 +1,12 @@
 import Avatar from "@/components/avatar";
 import CoverImage from "@/app/_components/cover-image";
 import DateFormatter from "@/components/date-formatter";
-import { type Author } from "@/types/author";
 import PostTitle from "@/app/_components/post-title";
+import Septerator from "@/components/septerator";
+import PostReadTime from "@/app/_components/post-read-time";
+import { Post } from "@/types/post";
 
-type Props = {
-  title: string;
-  coverImage: string;
-  date: string;
-  author: Author;
-};
-
-export function PostHeader({ title, coverImage, date, author }: Props) {
+export function PostHeader({ title, coverImage, date, author, content }: Post) {
   return (
     <>
       <PostTitle>{title}</PostTitle>
@@ -25,8 +20,10 @@ export function PostHeader({ title, coverImage, date, author }: Props) {
         <div className="block md:hidden mb-6">
           <Avatar {...author} />
         </div>
-        <div className="mb-6 text-lg">
+        <div className="mb-6 text-lg flex items-center">
           <DateFormatter dateString={date} />
+          <Septerator />
+          <PostReadTime content={content} />
         </div>
       </div>
     </>

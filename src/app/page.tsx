@@ -7,20 +7,13 @@ import MorePosts from "./_components/more-posts";
 export default function Index() {
   const allPosts = getAllPosts();
 
-  const [heroPost, morePosts] = [allPosts[0], allPosts.slice(1)];
+  const [heroPost, ...morePosts] = allPosts;
 
   return (
     <main>
       <Container>
         <Intro />
-        <HeroPost
-          title={heroPost.title}
-          coverImage={heroPost.coverImage}
-          date={heroPost.date}
-          author={heroPost.author}
-          slug={heroPost.slug}
-          excerpt={heroPost.excerpt}
-        />
+        <HeroPost {...heroPost} />
         {morePosts.length > 0 && <MorePosts posts={morePosts} />}
       </Container>
     </main>
