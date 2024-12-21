@@ -1,10 +1,10 @@
 import Link from "next/link";
-import Avatar from "../../../components/avatar/Avatar";
-import CoverImage from "../cover-image/CoverImage";
-import DateFormatter from "../../../components/date-formatter/DateFormatter";
+import CoverImage from "../../../../components/post/cover-image/CoverImage";
 import Septerator from "@/components/septerator";
-import PostReadTime from "../post-read-time";
+import PostReadTime from "../../../../components/post/post-read-time";
 import { Post } from "@/types/post";
+import DateFormatter from "@/components/date-formatter";
+import Avatar from "@/components/avatar";
 
 export function PostPreview({
   title,

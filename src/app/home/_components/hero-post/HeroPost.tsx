@@ -1,10 +1,10 @@
 import Link from "next/link";
-import DateFormatter from "../../../components/date-formatter";
-import CoverImage from "../cover-image";
-import Avatar from "../../../components/avatar";
+import CoverImage from "../../../../components/post/cover-image";
 import { Post } from "@/types/post";
-import PostReadTime from "../post-read-time";
+import PostReadTime from "../../../../components/post/post-read-time";
 import Septerator from "@/components/septerator";
+import DateFormatter from "@/components/date-formatter";
+import Avatar from "@/components/avatar";
 
 export function HeroPost({
   title,
