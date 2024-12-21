@@ -1,26 +1,20 @@
-import { type Author } from "@/types/author";
 import Link from "next/link";
 import Avatar from "../../../components/avatar/Avatar";
 import CoverImage from "../cover-image/CoverImage";
 import DateFormatter from "../../../components/date-formatter/DateFormatter";
-
-type Props = {
-  title: string;
-  coverImage: string;
-  date: string;
-  excerpt: string;
-  author: Author;
-  slug: string;
-};
+import Septerator from "@/components/septerator";
+import PostReadTime from "../post-read-time";
+import { Post } from "@/types/post";
 
 export function PostPreview({
   title,
   coverImage,
   date,
   excerpt,
+  content,
   author,
   slug,
-}: Props) {
+}: Post) {
   return (
     <div>
       <div className="mb-5">
@@ -31,8 +25,10 @@ export function PostPreview({
           {title}
         </Link>
       </h3>
-      <div className="text-lg mb-4">
+      <div className="flex items-center text-lg mb-4">
         <DateFormatter dateString={date} />
+        <Septerator />
+        <PostReadTime content={content} />
       </div>
       <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
       <Avatar name={author.name} picture={author.picture} />

@@ -1,17 +1,10 @@
-import { type Author } from "@/types/author";
 import Link from "next/link";
 import DateFormatter from "../../../components/date-formatter";
 import CoverImage from "../cover-image";
 import Avatar from "../../../components/avatar";
-
-type Props = {
-  title: string;
-  coverImage: string;
-  date: string;
-  excerpt: string;
-  author: Author;
-  slug: string;
-};
+import { Post } from "@/types/post";
+import PostReadTime from "../post-read-time";
+import Septerator from "@/components/septerator";
 
 export function HeroPost({
   title,
@@ -19,8 +12,9 @@ export function HeroPost({
   date,
   excerpt,
   author,
+  content,
   slug,
-}: Props) {
+}: Post) {
   return (
     <section>
       <div className="mb-8 md:mb-16">
@@ -33,8 +27,10 @@ export function HeroPost({
               {title}
             </Link>
           </h3>
-          <div className="mb-4 md:mb-0 text-lg text-content">
+          <div className="mb-4 md:mb-0 text-lg text-content flex items-center">
             <DateFormatter dateString={date} />
+            <Septerator />
+            <PostReadTime content={content} />
           </div>
         </div>
         <div>
