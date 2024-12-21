@@ -1,0 +1,22 @@
+enable:
+  issues: true
+  prs: true
+
+comments:
+  prs: |
+    라벨러는 제목과 설명에서 특수 텍스트와 일치하는 모든 라벨을 적용했습니다.
+    라벨을 검토하고 필요한 사항을 변경해 주시기 바랍니다.
+
+labels:
+  "Fix":
+    include:
+      - "[Fix]"
+  "Article":
+    include:
+      - "[Article]"
+  "Feature":
+    include:
+      - "[Feature]"
+  "Techdept":
+    include:
+      - "[Techdept]"
