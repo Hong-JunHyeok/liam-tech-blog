@@ -1,72 +1,68 @@
-.markdown {
+.post-content {
   @apply text-lg leading-relaxed w-full text-content;
 }
 
-.markdown ul,
-.markdown ol,
-.markdown p {
+.post-content ul,
+.post-content ol,
+.post-content p {
   @apply my-6;
 }
 
-.markdown pre {
-  @apply bg-gray-100 text-gray-800 p-4 rounded-lg my-4;
+.post-content pre {
+  @apply bg-gray-100 text-gray-800 p-4 rounded-lg my-4 flex items-center;
 }
-.markdown pre > code {
-  @apply text-gray-800;
+.post-content pre code {
+  @apply text-gray-800 overflow-y-auto w-full inline-block;
 }
 
-.markdown code {
+.post-content code {
   @apply bg-gray-100 text-success rounded-md text-sm leading-6 p-1;
 }
 
-.markdown h2 {
+.post-content h2 {
   @apply text-3xl mt-12 mb-4 leading-snug font-bold;
 }
 
-.markdown h3 {
+.post-content h3 {
   @apply text-2xl mt-8 mb-4 leading-snug font-bold;
 }
 
-.markdown img {
+.post-content img {
   @apply rounded-md shadow-sm mx-auto my-7;
 }
 
-.markdown figure {
+.post-content figure {
   @apply text-center my-8;
 }
 
-.markdown figcaption {
+.post-content figcaption {
   @apply text-sm text-gray-600 mt-2;
 }
 
-.markdown a {
+.post-content a {
   @apply text-blue-600 underline;
 }
 
-.markdown a:hover {
+.post-content a:hover {
   @apply text-blue-800 underline;
 }
 
-.markdown ul {
+.post-content ul {
   @apply pl-6 list-disc;
 }
 
-.markdown ol {
+.post-content ol {
   @apply pl-6 list-decimal;
 }
 
-.markdown li {
+.post-content li {
   @apply mb-2;
 }
 
-.markdown blockquote {
+.post-content blockquote {
   @apply bg-gray-50 border-l-4 border-success text-gray-700 pl-6 py-4 my-4 text-base;
 }
 
-.markdown blockquote > p {
+.post-content blockquote p {
   @apply p-0 m-0;
-}
-
-.markdown pre > code {
-  white-space: normal;
 }

@@ -1,0 +1,14 @@
+Feature:
+  - head-branch: ["^feature", "feature"]
+
+Fix:
+  - head-branch: ["^fix", "fix"]
+
+Techdept:
+  - head-branch: ["^techdept", "techdept"]
+
+Article:
+  - head-branch: ["^article", "article"]
+
+Release:
+  - head-branch: ["^develop", "develop"]
