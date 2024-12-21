@@ -10,13 +10,13 @@ comments:
 labels:
   "Fix":
     include:
-      - "[Fix]"
+      - "\bFix\b"
   "Article":
     include:
-      - "[Article]"
+      - "\bArticle\b"
   "Feature":
     include:
-      - "[Feature]"
+      - "\bFeature\b"
   "Techdept":
     include:
-      - "[Techdept]"
+      - "\bTechdept\b"
