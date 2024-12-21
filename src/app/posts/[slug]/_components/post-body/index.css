@@ -9,10 +9,10 @@
 }
 
 .post-content pre {
-  @apply bg-gray-100 text-gray-800 p-4 rounded-lg my-4;
+  @apply bg-gray-100 text-gray-800 p-4 rounded-lg my-4 flex items-center;
 }
 .post-content pre code {
-  @apply text-gray-800 overflow-auto w-full inline-block;
+  @apply text-gray-800 overflow-y-auto w-full inline-block;
 }
 
 .post-content code {
