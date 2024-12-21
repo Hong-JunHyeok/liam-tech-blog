@@ -2,7 +2,6 @@ import { notFound } from "next/navigation";
 import { getPostBySlug } from "@/lib/api";
 import Container from "@/components/container";
 import Header from "@/components/header";
-
 import PostHeader from "./_components/post-header";
 import PostBody from "./_components/post-body";
 import PostAlert from "./_components/post-alert";

@@ -1,9 +1,9 @@
 import Avatar from "@/components/avatar";
-import CoverImage from "@/app/_components/cover-image";
 import DateFormatter from "@/components/date-formatter";
-import PostTitle from "@/app/_components/post-title";
+import CoverImage from "@/components/post/cover-image";
+import PostReadTime from "@/components/post/post-read-time";
+import PostTitle from "@/components/post/post-title";
 import Septerator from "@/components/septerator";
-import PostReadTime from "@/app/_components/post-read-time";
 import { Post } from "@/types/post";
 
 export function PostHeader({ title, coverImage, date, author, content }: Post) {
