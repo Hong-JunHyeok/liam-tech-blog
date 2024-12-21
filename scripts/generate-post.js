@@ -6,7 +6,7 @@ function generatePost(title, excerpt, coverImage) {
 title: "${title}"
 excerpt: "${excerpt}"
 coverImage: "${coverImage}"
-date: ${new Date().toISOString()}
+date: "${new Date().toISOString()}"
 author:
   name: "홍준혁"
   picture: "/assets/blog/authors/liam.jpeg"
