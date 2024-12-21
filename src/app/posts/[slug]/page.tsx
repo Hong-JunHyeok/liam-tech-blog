@@ -1,6 +1,5 @@
 import { notFound } from "next/navigation";
 import { getPostBySlug } from "@/lib/api";
-import markdownToHtml from "@/lib/markdownToHtml";
 import Container from "@/components/container";
 import Header from "@/components/header";
 
@@ -22,8 +21,6 @@ export default async function Post(props: Params) {
     return notFound();
   }
 
-  const content = await markdownToHtml(post.content || "");
-
   return (
     <main>
       <PostAlert slug={params.slug} />
@@ -31,7 +28,7 @@ export default async function Post(props: Params) {
         <Header />
         <article className="mb-32">
           <PostHeader {...post} />
-          <PostBody content={content} />
+          <PostBody content={post.content} />
         </article>
       </Container>
     </main>
