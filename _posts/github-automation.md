@@ -11,4 +11,4 @@ ogImage:
   url: "/assets/blog/github-automation/cover.png"
 ---
 
-WIP
+WIP 작성중입니다.
