@@ -66,3 +66,7 @@
 .markdown blockquote > p {
   @apply p-0 m-0;
 }
+
+.markdown pre > code {
+  white-space: normal;
+}
