@@ -753,6 +753,11 @@ hast-util-whitespace@^3.0.0:
   dependencies:
     "@types/hast" "^3.0.0"
 
+highlight.js@^11.11.0:
+  version "11.11.0"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-11.11.0.tgz#91b15082ca8cdbe22424e0a000449d7d8a5c74c6"
+  integrity sha512-6ErL7JlGu2CNFHyRQEuDogOyGPNiqcuWdt4iSSFUPyferNTGlNTPFqeV36Y/XwA4V/TJ8l0sxp6FTnxud/mf8g==
+
 html-void-elements@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/html-void-elements/-/html-void-elements-3.0.0.tgz#fc9dbd84af9e747249034d4d62602def6517f1d7"
@@ -865,6 +870,16 @@ lru-cache@^10.2.0:
   version "10.4.3"
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-10.4.3.tgz#410fc8a17b70e598013df257c2446b7f3383f119"
   integrity sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==
+
+marked-highlight@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/marked-highlight/-/marked-highlight-2.2.1.tgz#33b7fcac24088c0e0213229b7d01044a2974670d"
+  integrity sha512-SiCIeEiQbs9TxGwle9/OwbOejHCZsohQRaNTY2u8euEXYt2rYUFoiImUirThU3Gd/o6Q1gHGtH9qloHlbJpNIA==
+
+marked@^15.0.4:
+  version "15.0.4"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-15.0.4.tgz#864dbf50227b6507646c771c2ef5f0de2924833e"
+  integrity sha512-TCHvDqmb3ZJ4PWG7VEGVgtefA5/euFmsIhxtD0XsBxI39gUSKL81mIRFdt0AiNQozUahd4ke98ZdirExd/vSEw==
 
 mdast-util-from-markdown@^2.0.0:
   version "2.0.2"
