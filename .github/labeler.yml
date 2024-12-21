@@ -9,3 +9,6 @@ Techdept:
 
 Article:
   - head-branch: ["^article", "article"]
+
+Release:
+  - head-branch: ["^develop", "develop"]
