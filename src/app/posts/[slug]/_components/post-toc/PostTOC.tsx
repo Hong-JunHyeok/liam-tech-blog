@@ -32,7 +32,7 @@ function PostTOC({ content }: Props) {
             <Link
               href={`#${title}`}
               onClick={handleClickAnchor(title)}
-              className="text-slate-600 underline opacity-60 inline-block"
+              className="text-slate-600 dark:text-slate-200 underline opacity-60 inline-block"
             >
               {title}
             </Link>

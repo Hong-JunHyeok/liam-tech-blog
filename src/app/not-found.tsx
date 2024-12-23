@@ -20,7 +20,7 @@ export default function NotFound() {
           페이지를 찾을 수 없음
         </h2>
         <p className="mt-5">요청하신 페이지는 없는 페이지입니다.</p>
-        <Link href="/" className="text-success">
+        <Link href="/" className="text-primary dark:text-primary-dark">
           홈으로 돌아가기
         </Link>
       </div>

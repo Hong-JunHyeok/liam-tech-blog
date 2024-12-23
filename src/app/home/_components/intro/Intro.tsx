@@ -10,7 +10,7 @@ export function Intro() {
         <Link
           href="https://welcome.clap.company/"
           target="_blank"
-          className="text-success"
+          className="text-primary dark:text-primary-dark"
         >
           DWhale
         </Link>{" "}
