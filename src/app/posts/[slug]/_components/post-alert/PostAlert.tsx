@@ -8,7 +8,7 @@ export default function PostAlert({ slug }: Props) {
   const GITHUB_FILE_LINK = `https://github.com/Hong-JunHyeok/liam-tech-blog/blob/main/_posts/${slug}.md`;
 
   return (
-    <div className="border-b bg-accent-1 border-accent-2 fixed top-0 w-full">
+    <div className="border-b bg-accent-1 border-accent-2 fixed top-0 w-full z-50">
       <div className="container mx-auto px-5">
         <div className="py-2 text-center text-sm ">
           지금 보시는 글은 100% 완벽하지 않습니다. 수정사항은{" "}
