@@ -10,7 +10,6 @@ export const metadata: Metadata = {
   title: `리암 테크블로그`,
   description: `디웨일 클라이언트 개발자 홍준혁입니다.`,
   openGraph: {
-    // TODO OG Image 등록하기
     images: [],
   },
 };
@@ -56,7 +55,10 @@ export default function RootLayout({
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </head>
       <body
-        className={cn(inter.className, "dark:bg-slate-900 dark:text-slate-400")}
+        className={cn(
+          inter.className,
+          "dark:bg-background-dark dark:text-text-dark"
+        )}
       >
         <div className="min-h-screen">{children}</div>
       </body>
