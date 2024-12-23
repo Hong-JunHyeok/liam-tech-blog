@@ -1,17 +1,18 @@
 "use client";
-
-import { MdDarkMode, MdLightMode } from "react-icons/md";
-import { useDarkMode } from "./hooks";
+import { useTheme } from "./hooks";
+import { CgDarkMode } from "react-icons/cg";
 
 function ThemeSwitch() {
-  const [darkMode, setDarkMode] = useDarkMode();
+  const { handleToggleTheme } = useTheme();
 
   return (
     <button
-      className="fixed bottom-5 right-5 p-3 rounded-full shadow-lg focus:outline-none transition-all z-50"
-      onClick={setDarkMode}
+      key="theme-swtich"
+      className="p-3 rounded-full shadow-lg focus:outline-none text-text dark:text-text-dark bg-background dark:bg-background-dark/50"
+      onClick={handleToggleTheme}
+      suppressHydrationWarning
     >
-      {darkMode ? <MdLightMode /> : <MdDarkMode />}
+      <CgDarkMode />
     </button>
   );
 }

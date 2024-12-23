@@ -7,8 +7,10 @@ export default function Layout({ children }: PropsWithChildren) {
   return (
     <main>
       <Container>{children}</Container>
-      <ThemeSwitch />
-      <ScrollToTopButton />
+      <div className="flex fixed bottom-5 right-5 z-50 gap-2">
+        <ScrollToTopButton />
+        <ThemeSwitch />
+      </div>
     </main>
   );
 }

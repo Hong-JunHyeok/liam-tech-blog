@@ -1,13 +1,30 @@
-import { useCallback, useState } from "react";
-import { getIsDarkMode, toggleTheme } from "./utils";
+import { useCallback, useLayoutEffect } from "react";
+import { getIsPreferDarkTheme, toggleTheme } from "./utils";
+import { useLocalStorage } from "@/hooks/useLocalStorage";
 
-export const useDarkMode = () => {
-  const [darkMode, setDarkMode] = useState(() => getIsDarkMode());
+const THEME_STORAGE_KEY = "THEME_STORAGE_KEY" as const;
 
-  const changeTheme = useCallback(() => {
-    toggleTheme();
-    setDarkMode((prev) => !prev);
-  }, []);
+export const useTheme = () => {
+  const [themeState, setThemeState] = useLocalStorage<boolean | null>(
+    THEME_STORAGE_KEY,
+    null
+  );
 
-  return [darkMode, changeTheme] as const;
+  const handleToggleTheme = useCallback(() => {
+    const nextTheme = !themeState;
+    toggleTheme(nextTheme);
+    setThemeState(nextTheme);
+  }, [themeState, setThemeState]);
+
+  useLayoutEffect(() => {
+    if (themeState !== null) {
+      toggleTheme(themeState);
+    } else {
+      const prefersDark = getIsPreferDarkTheme();
+      toggleTheme(prefersDark);
+      setThemeState(prefersDark);
+    }
+  }, [themeState, setThemeState]);
+
+  return { theme: themeState, handleToggleTheme };
 };

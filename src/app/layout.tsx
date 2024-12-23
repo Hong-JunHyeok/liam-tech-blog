@@ -19,8 +19,21 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const themeInitializerScript = `
+    (function() {
+      const savedTheme = localStorage.getItem('THEME_STORAGE_KEY');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const isDark = savedTheme ? JSON.parse(savedTheme) : prefersDark;
+      if (isDark) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    })();
+  `;
+
   return (
-    <html lang="ko">
+    <html lang="ko" suppressHydrationWarning>
       <head>
         <link
           rel="apple-touch-icon"
@@ -53,6 +66,7 @@ export default function RootLayout({
         />
         <meta name="theme-color" content="#000" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+        <script dangerouslySetInnerHTML={{ __html: themeInitializerScript }} />
       </head>
       <body
         className={cn(
