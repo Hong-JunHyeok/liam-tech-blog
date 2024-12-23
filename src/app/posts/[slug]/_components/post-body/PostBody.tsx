@@ -19,6 +19,15 @@ const marked = new Marked(
   })
 );
 
+const renderer = new marked.Renderer();
+
+renderer.heading = ({ text, depth }) => {
+  const id = text;
+  return `<h${depth} id="${id}">${text}</h${depth}>`;
+};
+
+marked.setOptions({ renderer });
+
 export function PostBody({ content }: Props) {
   return (
     <div className="max-w-2xl mx-auto">

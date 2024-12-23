@@ -5,6 +5,7 @@ import Header from "@/components/header";
 import PostHeader from "./_components/post-header";
 import PostBody from "./_components/post-body";
 import PostAlert from "./_components/post-alert";
+import PostTOC from "./_components/post-toc";
 
 type Params = {
   params: Promise<{
@@ -27,6 +28,7 @@ export default async function Post(props: Params) {
         <Header />
         <article className="mb-32">
           <PostHeader {...post} />
+          <PostTOC content={post.content} />
           <PostBody content={post.content} />
         </article>
       </Container>
