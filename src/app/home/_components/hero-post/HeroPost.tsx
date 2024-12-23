@@ -27,14 +27,16 @@ export function HeroPost({
               {title}
             </Link>
           </h3>
-          <div className="mb-4 md:mb-0 text-lg text-content flex items-center">
+          <div className="mb-4 md:mb-0 text-lg text-text dark:text-text-dark flex items-center">
             <DateFormatter dateString={date} />
             <Septerator />
             <PostReadTime content={content} />
           </div>
         </div>
         <div>
-          <p className="text-lg leading-relaxed mb-4 text-content">{excerpt}</p>
+          <p className="text-lg leading-relaxed mb-4 text-text dark:text-text-dark">
+            {excerpt}
+          </p>
           <Avatar {...author} />
         </div>
       </div>

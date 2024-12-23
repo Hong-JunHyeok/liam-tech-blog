@@ -1,5 +1,5 @@
 .post-content {
-  @apply text-lg leading-relaxed w-full text-content;
+  @apply text-lg leading-relaxed w-full text-text dark:text-text-dark;
 }
 
 .post-content ul,
@@ -9,14 +9,14 @@
 }
 
 .post-content pre {
-  @apply bg-gray-100 text-gray-800 p-4 rounded-lg my-4 flex items-center;
+  @apply bg-subBackground dark:bg-subBackground-dark text-text dark:text-text-dark  p-4 rounded-lg my-4 flex items-center;
 }
 .post-content pre code {
-  @apply text-gray-800 overflow-y-auto w-full inline-block;
+  @apply text-text dark:text-text-dark overflow-y-auto w-full inline-block;
 }
 
 .post-content code {
-  @apply bg-gray-100 text-success rounded-md text-sm leading-6 p-1;
+  @apply bg-subBackground dark:bg-subBackground-dark text-primary dark:text-primary-dark rounded-md text-sm leading-6 p-1;
 }
 
 .post-content h2 {
@@ -40,7 +40,7 @@
 }
 
 .post-content a {
-  @apply text-blue-600 underline;
+  @apply text-primary dark:text-primary-dark underline;
 }
 
 .post-content a:hover {
@@ -60,7 +60,7 @@
 }
 
 .post-content blockquote {
-  @apply bg-gray-50 border-l-4 border-success text-gray-700 pl-6 py-4 my-4 text-base;
+  @apply bg-gray-50 border-l-4 border-primary dark:border-primary-dark text-gray-700 pl-6 py-4 my-4 text-base;
 }
 
 .post-content blockquote p {

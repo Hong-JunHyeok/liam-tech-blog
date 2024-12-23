@@ -9,6 +9,7 @@ author:
   description: "변경사항에 유연하게 대처하기 위한 코드 설계에 관심이 많습니다."
 ogImage:
   url: "/assets/blog/how-to-support-i18n/cover.png"
+published: true
 ---
 
 다국어는 간단하면서 복잡한 문제입니다. 오늘은 리액트 환경에서 다국어를 지원하기 위해서 어떤 노력들이 있었는지 공유할까 합니다.

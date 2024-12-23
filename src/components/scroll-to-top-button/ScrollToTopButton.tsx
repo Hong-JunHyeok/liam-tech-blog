@@ -9,7 +9,7 @@ function ScrollToTopButton() {
     isVisible && (
       <button
         onClick={scrollToTop}
-        className="fixed bottom-5 right-5 p-3 bg-content text-white rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-opacity-50 transition-all"
+        className="p-3 rounded-full shadow-lg focus:outline-none text-text dark:text-text-dark bg-background dark:bg-background-dark/50"
       >
         <FaArrowUp />
       </button>
