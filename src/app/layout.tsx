@@ -57,7 +57,7 @@ export default function RootLayout({
       <body
         className={cn(
           inter.className,
-          "dark:bg-background-dark dark:text-text-dark"
+          "transition-colors duration-200 dark:bg-background-dark dark:text-text-dark"
         )}
       >
         <div className="min-h-screen">{children}</div>
