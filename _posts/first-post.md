@@ -9,6 +9,7 @@ author:
   description: "변경사항에 유연하게 대처하기 위한 코드 설계에 관심이 많습니다."
 ogImage:
   url: "/assets/blog/first-post/cover.png"
+published: true
 ---
 
 개발자로써의 과정은 다사다난 했습니다. 이 글은 자랑도 자책도 하는 글이 아닙니다. 그냥 저를 소개하는 글이에요. 잠시 제 이야기를 들어주세요.

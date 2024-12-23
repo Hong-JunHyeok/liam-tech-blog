@@ -13,6 +13,7 @@ author:
   description: "변경사항에 유연하게 대처하기 위한 코드 설계에 관심이 많습니다."
 ogImage:
   url: "${coverImage}"
+published: false
 ---
 `;
 
