@@ -4,7 +4,7 @@ excerpt: "테크블로그를 시작합니다."
 coverImage: "/assets/blog/first-post/cover.png"
 date: "2024-12-01T20:24:07.322Z"
 author:
-  name: Liam
+  name: 홍준혁
   picture: "/assets/blog/authors/liam.jpeg"
   description: "변경사항에 유연하게 대처하기 위한 코드 설계에 관심이 많습니다."
 ogImage:
