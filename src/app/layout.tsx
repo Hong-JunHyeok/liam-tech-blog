@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import cn from "classnames";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 import "./globals.css";
 
@@ -67,6 +68,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#000" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
         <script dangerouslySetInnerHTML={{ __html: themeInitializerScript }} />
+        <GoogleAnalytics gaId="G-34J0L2NRDX" />
       </head>
       <body
         className={cn(
