@@ -1,6 +1,6 @@
 ---
-title: "Github 기능 활용하여 생산성 높히기"
-excerpt: "테크블로그 구현하면서 좋다고 느낀 Github 기능들을 공유합니다."
+title: "Github Action 활용하여 생산성 높히기"
+excerpt: "Github Action을 활용한 기능들을 공유합니다."
 coverImage: "/assets/blog/github-automation/cover.png"
 date: "2025-01-04T06:42:50.754Z"
 author:
@@ -56,7 +56,7 @@ published: true
 
 아무것도 없는 리포지토리에 script.js이라는 가상의 작업 파일을 만들고 push 까지 진행해주었습니다.
 
-## 각 케이스 자동화하기
+## Github Action을 활용하여 자동화하기
 
 이제 Github Action을 활용하기 위한 환경 설정은 완료되었습니다.
 
