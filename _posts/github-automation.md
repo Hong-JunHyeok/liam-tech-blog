@@ -1,6 +1,6 @@
 ---
-title: "Github Action 활용하여 생산성 높히기"
-excerpt: "Github Action을 활용한 기능들을 공유합니다."
+title: "Github Labeler 도입하기"
+excerpt: "Github Labeler를 공유합니다."
 coverImage: "/assets/blog/github-automation/cover.png"
 date: "2025-01-04T06:42:50.754Z"
 author:
@@ -14,9 +14,6 @@ published: true
 
 저는 개발자를 처음 했을때 Github가 너무나 어려웠습니다.
 한국인인데 영어로 된 외부 저장소에 코드를 올리는 것 부터해서 모든게 저에게는 낯설기만 했던 것 같아요.
-
-하지만 날을 거듭할수록 이것이 익숙해지고 나름의 노하우가 생겼습니다.
-그래서 오늘은 제가 경험한 생산성이 좋아진다고 생각되는 기능들을 소개드리려고 합니다.
 
 먼저 `Github Action`이라는 선행 지식을 알고가면 좋을 것 같습니다.
 
@@ -38,7 +35,7 @@ published: true
 `Github Action`을 사용하면 위에서 언급한 케이스들에 대해서 자동화를 적용할 수 있게됩니다.
 이것이 개발자들이 `Github Action`을 사랑하는 이유이기도 합니다.
 
-직접 위 케이스들을 대응해보면서 더 친해져보도록 하겠습니다. 그 전에 환경 설정부터 들어갈게요
+여기서 Github Action의 가장 대표적인 기능중 하나인 [Labeler](https://github.com/actions/labeler)를 사용해보면서 친해져보도록 하곘습니다.
 
 ## 환경 설정
 
@@ -62,7 +59,7 @@ published: true
 
 위에서 설명한 반복될 수 있는 케이스들을 하나하나 살펴보며 자동화를 진행해보겠습니다.
 
-### `PR`에 대한 `Label`을 매번 수동으로 붙여야한다
+### `PR`에 대한 `Label`을 매번 수동으로 붙이기
 
 보통 협업을 할때는 하나의 브랜치에서 작업을 진행하지 않고, 각 기능에 맞게 여러 브랜치로 나뉘어서 진행하는 것을 선호하실겁니다.
 
@@ -98,7 +95,7 @@ Github에서 제공하는 기능인데, Issue나 PR을 식별하고 구분하기
 
 > 그냥 `"feature/*` 형식의 브랜치들은 Label을 자동으로 `Feature` 라고 붙일 수 없을까?
 
-[Labeler](https://github.com/actions/labeler)라는 Github Action을 사용한다면 이것을 구현할 수 있습니다.
+Labeler를 활용하면 이것을 쉽게 구현할 수 있습니다.
 
 Labeler의 README에서도 잘 설명해주고 있지만,
 
@@ -198,8 +195,4 @@ Article:
 
 이제 여러분의 서비스에 맞게 알맞게 잘 활용해보세요
 
-### `PR`가 올라올 때 (이하 PR), 테스트 혹은 Lint를 매번 돌려봐야한다
-
-### 프로덕션 브랜치에 새로운 변경사항이 있으면 수동으로 배포를 진행한다
-
-### `PR`에 대한 리뷰어 지정을 매번 일일이 해주어야만 한다
+지금까지 설명한 Labeler의 기능은 [여기](https://github.com/Hong-JunHyeok/github-action-test/pulls)서 확인해볼 수 있습니다.
